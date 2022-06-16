@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #87B6E1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(217, 255, 253);
+    height: 703px;
+    width: 1145px;
+    border-radius: 20px;
+    overflow: hidden;
+    top: -46px;
+}
+
+.left {
+    display: flex;
+    display: table-column;
+    flex: 0.7;
+    background-color: #DDF0F5;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.left .menu {
+    display: flex;
+}
+
+.allplaces {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.left .menu .search {
+    display: flex;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 35px;
+    width: 35%;
+}
+
+.left .menu .search input {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.left .text {
+    font-size: 35px;
+}
+
+.left .images {
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;
+    
+}
+
+.left .images img {
+    width: 140px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.left .images .add {
+    display: flex;
+    width: 140px;
+    height: 160px;
+    border: 1px solid #1F3B5B;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left .images .add a {
+    display: flex;
+    justify-content: center;
+}
+
+.left .images .add .plus {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    margin-top: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    background-color: #1F3B5B;
+    position: relative;
+    padding: 30px;
+}
+.right .headder {
+    display: flex;
+margin-top: 30px;
+}
+
+.right .text {
+    display: flex;
+    color: beige;
+    gap: 5px;
+    z-index: 2;
+    
+}
+
+.right .background {
+    position: absolute;
+ width: 80%;
+ margin-top: 120px;
+ margin-left: 30px;
+ opacity: 10%;
+ 
+}
+
+
+.right .notification {
+    display: flex;
+    gap: 5px;
+}
+.right .text1 {
+    color: beige;
+    width: 20%;
+    
+    background-color: red;
+}
+.right .text3 {
+    display: flex;
+    color: beige;
+    margin-left: 30px;
+    gap: 50px;  
+    
+}
+.right .poza {
+    position: absolute;
+    width: 17%;
+    border-radius:20px;
+    margin-left: 100px;
+
+}
+.right .background {
+    margin-left: 85px;
+    margin-top: 200px;
+}
