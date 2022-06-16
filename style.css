@@ -102,7 +102,9 @@ body {
 }
 .right .headder {
     display: flex;
+    justify-content: space-between;
 margin-top: 30px;
+align-items: center;
 }
 
 .right .text {
@@ -129,25 +131,31 @@ margin-top: 30px;
 }
 .right .text1 {
     color: beige;
-    width: 20%;
-    
+    width: 30%;
     background-color: red;
+    border-radius: 10px;
+    
+    height: 25%;
 }
 .right .text3 {
     display: flex;
     color: beige;
-    margin-left: 30px;
-    gap: 50px;  
     
 }
 .right .poza {
-    position: absolute;
-    width: 17%;
+
     border-radius:20px;
-    margin-left: 100px;
+    width: 60px;
 
 }
 .right .background {
     margin-left: 85px;
     margin-top: 200px;
-}di
+}
+.right .poze {
+    position: relative;
+}
+.right .punct {
+    position: absolute;
+    right: 0;
+}
