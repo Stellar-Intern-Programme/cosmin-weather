@@ -33,6 +33,7 @@ body {
 
 .left .menu {
     display: flex;
+    gap: 20px;
 }
 
 .allplaces {
@@ -67,8 +68,8 @@ body {
 }
 
 .left .images img {
-    width: 140px;
-    height: 160px;
+    width: 130px;
+    height: 155px;
     border-radius: 10px;
 }
 
@@ -80,6 +81,7 @@ body {
     border-radius: 10px;
     align-items: center;
     flex-direction: column;
+    flex-shrink: 0;
 }
 
 .left .images .add a {
@@ -98,6 +100,14 @@ body {
     height: 180px;
     width: 160px;
 
+}
+.left .picture1{
+    display: flex;
+    flex-direction: column;
+}
+.left .picture2{
+    display: flex;
+    flex-direction: column;
 }
 
 .left .place{
@@ -123,12 +133,16 @@ font-size: 80%;
 gap: 20px;
 margin-top: 30px;
 
-}
-.right  .rain_drop{
+} 
+.rain_drop{
     
-    display:flex;
+    flex: 1;
     
 }
+.chur{
+    flex: 1;
+}
+
 
 
 .weather_left .day_of_week .row {
@@ -138,7 +152,7 @@ margin-top: 30px;
 }
 .left .chur{
     display:flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
 }
 .left .small_line{
@@ -148,7 +162,7 @@ margin-top: 30px;
  .big_line{
      display: flex;
      border-radius: 5px;
-    width: 215px;
+    width: 200px;
     height: 10px;
     background-color: #D9D9D9;
     justify-content: center;
@@ -161,17 +175,9 @@ margin-top: 30px;
     background-color: #EA3B3B;
     
 }
-
-
-
-
-
-
-
-
-
-
-
+.row a{
+    flex: 1;
+}
 
 .right {
     display: flex;
@@ -251,29 +257,24 @@ align-items: center;
 .right .temperature {
 z-index: 2;
 
-    margin-left: 100px;
-    margin-top: 140px;
-    
+align-items: center;    
     color: white;
     font-size: 60px;
     
 }
 .right .celsius {
     
-margin-top: -120px;
-margin-left: 220px;
+
 
     width: 10%;
 }
 .right .rain{
-    width: 35%;
-    margin-top: -60px;
-    margin-left: 60px;
+    display: flex;
+    justify-content: center;
 }
 .right .date{
     color: white;
-    margin-top: -40px;
-    margin-left: 160px;
+    
     
 }
 .right .day{
@@ -287,12 +288,15 @@ margin-left: 220px;
 .right .location{
     
     color: #D9D9D9;
-    margin-top: 135px;
-    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
 
 }
 .right .country{
-    margin-left: 50px;
+    
     
 }
 .right .feel {
@@ -301,8 +305,8 @@ gap: 10px;
 }
 .right .weather{
     color: white;
-    margin-top: 65px;
-   font
+    margin-top: 175px;
+   
 }
 .right .weather_type{
     display: flex;
@@ -320,6 +324,7 @@ gap: 10px;
     margin-left: 75px;
 
 }
+
 .right .diagrame {
     display: flex;
     margin-top: -125px;
@@ -364,4 +369,131 @@ gap: 10px;
     background-color: #365B7D;
     border-radius: 5px;
     margin-top: 65px;
+}
+@media screen and (max-width: 700px) {
+    .container{
+        flex-direction: column-reverse;
+border-radius: 20px;
+        margin-top: 10px;
+      height: auto;
+      width: 90%;
+
+    }
+    .left{
+        
+        height: 60%;
+        flex: 1;
+    }
+    .images{
+        overflow: scroll;
+    }
+    
+.left .search{
+    display: flex;
+    width: 50%;
+}
+.left .menu .search{
+    display: flex;
+    width: 70%;
+}
+.left .chur{
+    display: flex;
+    gap: 4%;
+    width: 46%;
+}
+.small_line{
+    width: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .right{
+       display: flex;
+        height: 280px;
+        
+        flex: unset;
+    }
+    .right .headder{
+        font-size: 13px;
+        margin-top: 1px;
+        
+    }
+    .right .text{
+        gap: 10px;
+    }
+    .right .background{
+width: 70%;
+margin-top: 50px ;
+margin-left: 140px;
+    }
+    .right .background1{
+        width: 70%;
+        margin-left: -80px;
+    }
+    .right .weather  {
+        display: none;
+    }
+    .right .weather_type{
+        display: none;
+    }
+    .chart{
+        display: none;
+    }
+    .chart2{
+        display: none;
+    }
+    .chart3{
+        display: none;
+    }
+    .chart4{
+        display: none;
+    }
+    .chart5{
+        display: none;
+    }
+    .right .nr{
+        display: none;
+    }
 }
