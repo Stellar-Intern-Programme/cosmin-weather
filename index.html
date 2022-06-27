@@ -2,19 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <script src="indes.js"></script>
 </head>
 
 <body>
+    <div class="pop-up" id="modal">
+        <div class="box">
+            <div class="searchpop">
+                <div class="serarch1">
+                    <input type="text" placeholder="City Name" id="cityname"/>
+                </div>
+                <div class="serarch2">
+                    <input type="text" id="photoUrl" placeholder="Photo URL" />
+                </div>
+                <div class="serarch3" id="background">
+                    <img src="src/imagne.svg" alt="image" class="defaultImage" />
+                    <div class="poza7"></div>
+                </div>
+                <div  onclick="add()" class="serarch4"><a>Add City</a></div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="left">
-
             <div class="menu">
-                <div class="search"><img src="src/search.svg" alt="search"><input type="text" placeholder="search">
+                <div class="search">
+                    <img src="src/search.svg" alt="search" /><input type="text" placeholder="search" />
                 </div>
                 <div class="allplaces">
                     <p>All places ▼</p>
@@ -23,23 +41,28 @@
             <div class="text">
                 <p>Weather <b>Forecast</b></p>
             </div>
+            <div class="wrapper">
+                <div class="container-top">
+                    <div id="containerpoze" class="images">
+                        <div class="big_picture">
+                            <img src="src/berlin.jfif" alt="palat" /><a>Berlin,Germany</a>
+                        </div>
+                        <div class="picture1">
+                            <img src="src/paris.jfif" alt="palat" /><a>Paris,France</a>
+                        </div>
+                        <div class="picture2">
+                            <img src="src/new york.jfif" alt="palat" /> <a>New York,USA</a>
+                        </div>
+                    </div>
 
-            <div class="images">
-
-                <div class="big_picture"><img src="src/berlin.jfif" alt="palat"><a>Berlin,Germany</a></div>
-                <div class="picture1"><img src="src/paris.jfif" alt="palat"><a>Paris,France</a></div>   
-                <div class="picture2"><img src="src/new york.jfif" alt="palat"> <a>New York,USA</a></div>
-
-                <div class="add">
-                    <div class="plus">+</div><a>Add city</a>
+                    <div onclick="modal()" class="add addBtn">
+                        <div class="plus">+</div>
+                        <a>Add city</a>
+                    </div>
                 </div>
+            </div>
 
-            </div>
-            <div class="place">
-                
-                
-               
-            </div>
+            <div class="place"></div>
             <div class="week">
                 <a>Week</a>
                 <div class="month">
@@ -53,10 +76,10 @@
                     <div class="row">
                         <a>Monday</a>
                         <div class="rain_drop">
-                            <img src="src/picatura.svg" alt="picatura"><a>50%</a>
+                            <img src="src/picatura.svg" alt="picatura" /><a>50%</a>
                         </div>
                         <div class="rain_drop">
-                            <img src="src/storm.svg" alt="storm" class="storm">
+                            <img src="src/storm.svg" alt="storm" class="storm" />
                         </div>
                         <div class="chur">
                             <a>17°C</a>
@@ -64,16 +87,15 @@
                                 <div class="small_line"></div>
                             </div>
                             <a>26°C</a>
-
                         </div>
                     </div>
                     <div class="row">
                         <a>Tuesday</a>
                         <div class="rain_drop">
-                            <img src="src/picatura.svg" alt="picatura"><a>50%</a>
+                            <img src="src/picatura.svg" alt="picatura" /><a>50%</a>
                         </div>
                         <div class="rain_drop">
-                            <img src="src/storm.svg" alt="storm" class="storm">
+                            <img src="src/storm.svg" alt="storm" class="storm" />
                         </div>
                         <div class="chur">
                             <a>17°C</a>
@@ -86,10 +108,10 @@
                     <div class="row">
                         <a>Wednesday</a>
                         <div class="rain_drop">
-                            <img src="src/picatura.svg" alt="picatura"><a>50%</a>
+                            <img src="src/picatura.svg" alt="picatura" /><a>50%</a>
                         </div>
                         <div class="rain_drop">
-                            <img src="src/storm.svg" alt="storm" class="storm">
+                            <img src="src/storm.svg" alt="storm" class="storm" />
                         </div>
                         <div class="chur">
                             <a>17°C</a>
@@ -102,10 +124,10 @@
                     <div class="row">
                         <a>Thursday</a>
                         <div class="rain_drop">
-                            <img src="src/picatura.svg" alt="picatura"><a>50%</a>
+                            <img src="src/picatura.svg" alt="picatura" /><a>50%</a>
                         </div>
                         <div class="rain_drop">
-                            <img src="src/storm.svg" alt="storm" class="storm">
+                            <img src="src/storm.svg" alt="storm" class="storm" />
                         </div>
                         <div class="chur">
                             <a>17°C</a>
@@ -118,10 +140,10 @@
                     <div class="row">
                         <a>Friday</a>
                         <div class="rain_drop">
-                            <img src="src/picatura.svg" alt="picatura"><a>50%</a>
+                            <img src="src/picatura.svg" alt="picatura" /><a>50%</a>
                         </div>
                         <div class="rain_drop">
-                            <img src="src/storm.svg" alt="storm" class="storm">
+                            <img src="src/storm.svg" alt="storm" class="storm" />
                         </div>
                         <div class="chur">
                             <a>17°C</a>
@@ -134,10 +156,10 @@
                     <div class="row">
                         <a>Saturday</a>
                         <div class="rain_drop">
-                            <img src="src/picatura.svg" alt="picatura"><a>50%</a>
+                            <img src="src/picatura.svg" alt="picatura" /><a>50%</a>
                         </div>
                         <div class="rain_drop">
-                            <img src="src/storm.svg" alt="storm" class="storm">
+                            <img src="src/storm.svg" alt="storm" class="storm" />
                         </div>
                         <div class="chur">
                             <a>17°C</a>
@@ -150,10 +172,10 @@
                     <div class="row">
                         <a>Sunday</a>
                         <div class="rain_drop">
-                            <img src="src/picatura.svg" alt="picatura"><a>50%</a>
+                            <img src="src/picatura.svg" alt="picatura" /><a>50%</a>
                         </div>
                         <div class="rain_drop">
-                            <img src="src/storm.svg" alt="storm" class="storm">
+                            <img src="src/storm.svg" alt="storm" class="storm" />
                         </div>
                         <div class="chur">
                             <a>17°C</a>
@@ -163,10 +185,8 @@
                             <a>26°C</a>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
 
         <div class="right">
@@ -176,43 +196,37 @@
                     <div class="text1">
                         <p>4</p>
                     </div>
-
                 </div>
                 <div class="text3">
                     <b>Places</b>
-
                 </div>
                 <div class="poze">
-                    <img src="src/cosmin1.jpg" alt="cosmin" class="poza">
-                    <img src="src/point.png" alt="punct" class="punct">
+                    <img src="src/cosmin1.jpg" alt="cosmin" class="poza" />
+                    <img src="src/point.png" alt="punct" class="punct" />
                 </div>
-
             </div>
-            <img src="src/cloud.svg" alt="cloud" class="background">
-            <img src="src/cloud.svg" alt="cloud" class="background1">
-           
-           
+            <img src="src/cloud.svg" alt="cloud" class="background" />
+            <img src="src/cloud.svg" alt="cloud" class="background1" />
+
             <div class="rain">
-                <img src="src/rain.svg" alt="rain" class="rain">
-                 <div class="date">
-                <div class="today"><a>Today</a></div>
-                <div class="day"><a>Sat, 3 Aug</a></div>
+                <img src="src/rain.svg" alt="rain" class="rain" />
+                <div class="date">
+                    <div class="today"><a>Today</a></div>
+                    <div class="day"><a>Sat, 3 Aug</a></div>
+                </div>
             </div>
+            <div class="rain">
+                <div class="temperature">
+                    <h1>30</h1>
+                </div>
+                <img src="src/celsius.svg" alt="celsius" class="celsius" />
             </div>
-            <div class="rain"><div class="temperature">
-                <h1>30</h1>
-            </div> 
-            <img src="src/celsius.svg" alt="celsius" class="celsius">
-        </div>
-                
-            
-            
-            <div class="location">
 
+            <div class="location">
                 <div class="country"><a>Berlin, Germany</a></div>
                 <div class="feel">
                     <a>Feels like 34</a>
-                    <img src="src/Ellipse.svg" alt="punct" class="punct1">
+                    <img src="src/Ellipse.svg" alt="punct" class="punct1" />
                     <a>Sunset 20:15</a>
                 </div>
             </div>
@@ -230,7 +244,6 @@
                 <a>18</a>
             </div>
             <div class="diagrame">
-
                 <div class="chart"></div>
                 <div class="chart2"></div>
                 <div class="chart3"></div>
@@ -238,10 +251,7 @@
                 <div class="chart5"></div>
             </div>
         </div>
-
-
     </div>
-
 </body>
 
 </html>
