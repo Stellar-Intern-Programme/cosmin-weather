@@ -21,8 +21,6 @@
                     <input type="text" id="photoUrl" placeholder="Photo URL" />
                 </div>
                 <div class="serarch3" id="background">
-                    <img src="src/imagne.svg" alt="image" class="defaultImage" />
-                    <div class="poza7"></div>
                 </div>
                 <div  onclick="add()" class="serarch4"><a>Add City</a></div>
             </div>
@@ -47,7 +45,7 @@
                        
                     </div>
 
-                    <div onclick="modal()" class="add addBtn">
+                    <div onclick="openModal()" class="add addBtn">
                         <div class="plus">+</div>
                         <a>Add city</a>
                     </div>
@@ -215,7 +213,7 @@
             </div>
 
             <div class="location">
-                <div class="country"><a>Berlin, Germany</a></div>
+                <div class="country" id="location"><a>Berlin, Germany</a></div>
                 <div class="feel">
                     <a>Feels like 34</a>
                     <img src="src/Ellipse.svg" alt="punct" class="punct1" />
